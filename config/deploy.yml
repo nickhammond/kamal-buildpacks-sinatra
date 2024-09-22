@@ -1,0 +1,24 @@
+service: hotdonuts
+
+image: nickhammond/hotdonuts
+
+servers:
+  web:
+    hosts:
+      - 64.227.108.46
+    options:
+      publish: 80
+
+registry:
+  username: nickhammond
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+builder:
+  arch: amd64
+  context: "."
+  pack:
+    builder: "heroku/builder:24"
+    buildpacks:
+      - heroku/ruby
+      - heroku/procfile
