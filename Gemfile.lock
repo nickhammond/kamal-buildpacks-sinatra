@@ -57,6 +57,9 @@ GEM
       rack (>= 3.0.0, < 4)
     rack-session (2.0.0)
       rack (>= 3.0.0)
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
     ruby2_keywords (0.0.5)
     securerandom (0.3.1)
     sinatra (4.0.0)
@@ -75,6 +78,7 @@ GEM
     tilt (2.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    webrick (1.8.1)
     zeitwerk (2.6.18)
 
 PLATFORMS
@@ -95,7 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   kamal!
-  rack
+  rackup
   sinatra
 
 BUNDLED WITH
