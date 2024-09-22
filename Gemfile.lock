@@ -95,6 +95,7 @@ PLATFORMS
 
 DEPENDENCIES
   kamal!
+  rack
   sinatra
 
 BUNDLED WITH
