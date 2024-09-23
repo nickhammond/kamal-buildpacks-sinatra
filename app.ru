@@ -9,5 +9,5 @@ get '/up' do
 end
 
 get '/' do
-  "Hello from pack"
+  "Hello from pack!"
 end
