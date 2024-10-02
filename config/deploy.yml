@@ -8,13 +8,12 @@ servers:
       - 64.23.193.237
 
 registry:
-  username: <%= ENV['KAMAL_REGISTRY_USERNAME'] %>
+  username: nickhammond
   password:
     - KAMAL_REGISTRY_PASSWORD
 
 builder:
   arch: amd64
-  # context: "."
   pack:
     builder: "heroku/builder:24"
     buildpacks:
