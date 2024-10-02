@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/nickhammond/kamal.git
-  revision: e252004eef8697fecdaecf661fe47e659c2e7c0f
+  revision: dda8efe39a7378eeb4d73db6b480392b2de2d79a
   branch: buildpacks
   specs:
-    kamal (2.0.0.rc2)
+    kamal (2.0.0)
       activesupport (>= 7.0)
       base64 (~> 0.2)
       bcrypt_pbkdf (~> 1.0)

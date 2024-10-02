@@ -5,16 +5,16 @@ image: nickhammond/hotdonuts
 servers:
   web:
     hosts:
-      - 64.227.108.46
+      - 64.23.193.237
 
 registry:
-  username: nickhammond
+  username: <%= ENV['KAMAL_REGISTRY_USERNAME'] %>
   password:
     - KAMAL_REGISTRY_PASSWORD
 
 builder:
   arch: amd64
-  context: "."
+  # context: "."
   pack:
     builder: "heroku/builder:24"
     buildpacks:
